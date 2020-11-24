@@ -1,19 +1,25 @@
 import React from "react";
+import "../../styles/style.css";
+import me from "../../images/me.png";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
 const Home = () => (
-  <div>
-    <h1>Home Page</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-      varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-      Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-      imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum ligula
-      in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare elit.
-      Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-      consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-      fames ac ante ipsum primis in faucibus.
-    </p>
-  </div>
+  <Container id="container">
+    <Row>
+      <Col xs={6} md={4}>
+        <Image src={me} />
+      </Col>
+      <Col xs={12} md={8}>
+          <h1>AboutMe</h1>
+          <p>Hi, my name is Jacob Nelson and thanks for taking a look at my portfolio. I'm currently
+          living in Austin, TX and attending the University of Texas where I'm learning the skills
+          needed to become a full stack web developer.</p>
+      </Col>
+    </Row>
+  </Container>
 );
 
 export default Home;

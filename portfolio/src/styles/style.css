@@ -1,0 +1,12 @@
+body {
+    background-image: url(../images/circle-blues.png);
+}
+
+#container {
+    background-color: white;
+    padding: 45px;
+    margin: 50px;
+    margin-top: 55px;
+    width: 70%;
+    margin-bottom: 55px;
+}
