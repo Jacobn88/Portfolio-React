@@ -1,21 +1,26 @@
 import React from "react";
+import Project from "../Project"
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import projects from "../../projects.json"
 
-const Portfolio = () => (
-  <div>
-    <h1>Blog Page</h1>
-    <p>
-      Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
-      turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
-      Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
-      nunc, sed pretium risus rutrum eget. Nam consequat, ligula in faucibus vestibulum, nisi justo
-      laoreet risus, luctus luctus mi lacus sit amet libero. Class aptent taciti sociosqu ad litora
-      torquent per conubia nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-      lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec placerat
-      accumsan mi, ut congue neque placerat eu. Donec nec ipsum in velit pellentesque vehicula sit
-      amet at augue. Maecenas aliquam bibendum congue. Pellentesque semper, lectus non ullamcorper
-      iaculis, est ligula suscipit velit, sed bibendum turpis dui in sapien.
-    </p>
-  </div>
+function Portfolio () {
+  const codeTube = projects[0]
+  const hunger = projects[1]
+  const weather = projects[2]
+    const password = projects[3]
+    const note = projects[4]
+    const readme = projects[5]
+return (
+  <Container>
+  <Project {...codeTube}/>
+  <Project {...hunger}/>
+  <Project {...weather}/>
+  <Project {...password}/>
+  <Project {...note}/>
+  <Project {...readme}/>
+  </Container>
 );
-
+}
 export default Portfolio;
