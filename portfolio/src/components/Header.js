@@ -8,7 +8,7 @@ import {
   useLocation,
 } from "react-router-dom";
 
-function NavTabs() {
+function Header() {
   const location = useLocation();
   return (
     <ul className="nav nav-tabs">
@@ -19,10 +19,10 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="/about"
-          className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
+          to="/skills"
+          className={location.pathname === "/skills" ? "nav-link active" : "nav-link"}
         >
-          About
+          Skills
         </Link>
       </li>
       <li className="nav-item">
@@ -45,4 +45,4 @@ function NavTabs() {
   );
 }
 
-export default NavTabs;
+export default Header;

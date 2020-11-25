@@ -1,20 +1,25 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import linkedin from "../../images/61109.png"
+import github from "../../images/GitHub-Mark.png"
 
 const Contact = () => (
-  <div>
-    <h1>Contact Page</h1>
-    <p>
-      Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
-      Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
-      pellentesque placerat lacus imperdiet efficitur. In felis nisl, luctus non ante euismod,
-      tincidunt bibendum mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-      posuere, eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque nec metus
-      vestibulum, egestas massa eu, sollicitudin ipsum. Nulla facilisi. Sed ut erat ligula. Nam
-      tincidunt nunc in nibh dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-      conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus. Etiam vel
-      condimentum magna, quis tempor nulla.
-    </p>
-  </div>
+  <Container id="container">
+    <div>
+    <h2>Jacob Nelson</h2>
+    <h2>Nelsonjacob1988@gmail.com</h2>
+    <h2>512-417-4166</h2>
+    </div>
+    <div id="contact">
+    <a href="http://www.linkedin.com/in/jacobn88">
+      <Image src={linkedin} style={{ width: 50, height: 50, margin: 20}}/>
+    </a>
+    <a href="http://www.github.com/jacobn88">
+      <Image src={github} style={{ width: 70, height: 70, margin: 20}}/>
+    </a>
+    </div>
+  </Container>
 );
 
 export default Contact;
